@@ -495,10 +495,9 @@ end
     end
 })
 
-
 TrollTab:AddSection({ "animações" })
 TrollTab:AddButton({"animação Sonic exe"})
-
 local TrollTab = Window:MakeTab({ Title = "hacks", Icon = "rbxassetid://7167707584" })
 TrollTab:AddSection({"admin seção"})
-TrollTab:AddButton({"admin"})
+TrollTab:AddButton({"velocidade 200"})
+TrollTab:AddDescription({"em breve"})
