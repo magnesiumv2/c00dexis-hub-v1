@@ -495,12 +495,10 @@ end
     end
 })
 
+
 TrollTab:AddSection({ "animações" })
 TrollTab:AddButton({"animação Sonic exe"})
-local TrollTab = Window:MakeTab({ Title = "hacks", Icon = "rbxassetid://7167707584" })
 
+local TrollTab = Window:MakeTab({ Title = "hacks", Icon = "rbxassetid://7167707584" })
 TrollTab:AddSection({"admin seção"})
-Trolltab:AddButton({ 
-   Name = "velocidade 200",
-    Callback = function()
-   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+TrollTab:AddButton({"admin"})
