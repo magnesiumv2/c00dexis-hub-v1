@@ -27,7 +27,7 @@ InfoTab:AddParagraph({"esse hub é universal"})
 InfoTab:AddParagraph({"Novidades:", "logo terá mais opções!"})
 InfoTab:AddParagraph({"esse hub está na versão v1"})
 InfoTab:AddButton({"VERSÃO EDIT", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/wx-sources/spacecomm/refs/heads/main/experimental"))()
+    loadstring(game:HttpGet("https://pastefy.app/XCtZsGhP/raw"))()
 end})
 
 InfoTab:AddSection({ "Rejoin" })
@@ -496,9 +496,10 @@ end
 })
 
 
-TrollTab:AddSection({ "animações" })
-TrollTab:AddButton({"animação Sonic exe"})
-
-local TrollTab = Window:MakeTab({ Title = "hacks", Icon = "rbxassetid://7167707584" })
-TrollTab:AddSection({"admin seção"})
-TrollTab:AddButton({"admin"})
+TrollTab:AddSection({ "animações e emotes" })
+TrollTab:AddButton({"animação Sonic exe", function()
+    loadstring(game:HttpGet("https://pastefy.app/XCtZsGhP/raw"))()
+end})
+TrollTab:AddButton({"fe emotes", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
+End})
