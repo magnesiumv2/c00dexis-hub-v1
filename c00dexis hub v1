@@ -506,3 +506,13 @@ local TrollTab = Window:MakeTab({ Title = "hacks", Icon = "rbxassetid://71677075
 TrollTab:AddSection({"admin seleção"})
 TrollTab:AddButton({"admin", function()    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotAtomz/Atom-Scripts/refs/heads/main/ConsoleLineDark.lua"))()
 end})
+TrollTab:AddButton({"velocidade 200", function()
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+end})
+TrollTab:AddButton({"velocidade 16", function()
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end})
+TrollTab:AddSection({"fling"})
+TrollTab:AddButton({"fling", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/K1LAS1K/Ultimate-Fling-GUI/main/flingscript.lua"))()
+end})
