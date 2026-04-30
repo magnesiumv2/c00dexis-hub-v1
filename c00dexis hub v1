@@ -523,3 +523,15 @@ TrollTab:AddSection({"exploit seção"})
 TrollTab:AddButton({"view", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/protezzx/Vixyus/refs/heads/main/Spectate%20Gui.txt"))()
 end})
+TrollTab:AddButton({"tptool", function()
+   local LocalPlr = game.Players.LocalPlayer
+local hrp = LocalPlr.Character:WaitForChild("HumanoidRootPart", 10)
+
+local t = Instance.new("Tool", LocalPlr.Backpack)
+t.Name = "Teleport Tool"
+t.RequiresHandle = false
+t.Activated:Connect(function()
+    local mousePos = LocalPlr:GetMouse().Hit.Position
+    hrp.CFrame = CFrame.new(mousePos) * (hrp.CFrame - hrp.Position)
+end)
+end})
